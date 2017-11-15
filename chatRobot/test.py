@@ -15,7 +15,7 @@ def text_reply(msg):
     # msg['FromUserName']就是发送者的ID
     # 将消息的类型和文本内容返回给发送者
     if "呵呵" in msg['Text']:
-        itchat.send("嘿嘿嘿.", msg['FromUserName'])
+        itchat.send("嘿嘿嘿!", msg['FromUserName'])
 
 
 @itchat.msg_register([PICTURE, RECORDING, ATTACHMENT, VIDEO])
